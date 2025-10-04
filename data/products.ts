@@ -1,7 +1,7 @@
 // lib/data.ts
 
 export async function getProducts() {
-  const res = await fetch("https://dummyjson.com/products?limit=16", {
+  const res = await fetch("https://dummyjson.com/products/category/womens-dresses?limit=16", {
     next: { revalidate: 60 },
   });
   if (!res.ok) throw new Error("Failed to fetch products");
@@ -43,7 +43,7 @@ export async function getProductList({
   limit: number;
 }) {
   const skip = (page - 1) * limit;
-  let baseUrl = "https://dummyjson.com/products";
+  let baseUrl = "https://dummyjson.com/products/category/womens-dresses";
   let url = `${baseUrl}?limit=${limit}&skip=${skip}`;
 
   if (search) {

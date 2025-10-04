@@ -33,12 +33,12 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* ✅ Global Header */}
-        {/* <Header user={user} /> */}
+        <Header user={user} />
         {/* ✅ Main content */}
-        {/* <div className="pt-16 bg-lunar-green-50">{children}</div> */}
-        {children}
+        <div className="pt-16 bg-lunar-green-50">{children}</div>
+        {/* {children} */}
         {/* ✅ Global Cart Sidebar */}
-        {/* <CartSidebar /> */}
+        <CartSidebar />
       </body>
     </html>
   );
