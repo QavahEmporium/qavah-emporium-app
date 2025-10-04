@@ -50,7 +50,7 @@ export default function Header({ user }: { user: IUser | null }) {
 
       {/* Logo */}
       <Link href="/" className="text-xl font-bold tracking-wide md:text-2xl">
-        StoreName
+        Qavah
       </Link>
 
       {/* Desktop Nav */}
