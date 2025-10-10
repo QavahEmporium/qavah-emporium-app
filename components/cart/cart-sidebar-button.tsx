@@ -11,9 +11,9 @@ export default function CartSidebarButton() {
 
   return (
     <button onClick={toggleCart} className="relative">
-      <ShoppingBag className="w-6 h-6 text-lunar-green-900" />
+      <ShoppingBag className="w-6 h-6 text-lunar-green-700" />
       {itemsCount > 0 && (
-        <span className="absolute -top-2 -right-2 bg-black text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+        <span className="absolute -top-2 -right-2 bg-pink-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
           {itemsCount}
         </span>
       )}

@@ -25,21 +25,21 @@ export function AddToCartButton({ product }: { product: any }) {
       <div className="flex block w-fit items-center gap-3 p-2 bg-lunar-green-100 border rounded-full shadow-md">
         <button
           onClick={() => setQuantity(Math.max(1, quantity - 1))}
-          className="w-8 h-8 flex items-center justify-center bg-lunar-green-200 rounded-xl hover:bg-lunar-green-300 "
+          className="w-8 h-8 flex items-center justify-center bg-lunar-green-200 rounded-xl hover:bg-lunar-green-300"
         >
-          <Minus className="w-4 h-4 text-lunar-green-800" />
+          <Minus strokeWidth={3} className="w-4 h-4 text-lunar-green-900" />
         </button>
         <span className="w-8 text-center font-medium">{quantity}</span>
         <button
           onClick={() => setQuantity(quantity + 1)}
-          className="w-8 h-8 flex items-center justify-center bg-lunar-green-200 rounded-xl hover:bg-lunar-green-300 "
+          className="w-8 h-8 flex items-center justify-center bg-lunar-green-200 rounded-xl hover:bg-lunar-green-300"
         >
-          <Plus className="w-4 h-4 text-lunar-green-800" />
+          <Plus strokeWidth={3} className="w-4 h-4 text-lunar-green-900 font-semibold" />
         </button>
       </div>
       <button
         onClick={handleAdd}
-        className="bg-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition w-full"
+        className="bg-gull-gray-500 text-white py-3 font-bold hover:bg-gull-gray-700 transition w-full font-raleway"
       >
         Add to Cart
       </button>

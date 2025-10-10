@@ -65,7 +65,7 @@ export default function OrdersClient({ orders }: { orders: Order[] }) {
                       ? "text-lunar-green-700 bg-lunar-green-100"
                       : order.status === "cancelled"
                       ? "text-red-600 bg-red-100"
-                      : "text-pink-600 bg-pink-100"
+                      : "text-lunar-green-700 bg-gull-gray-100"
                   }`}
                 >
                   {order.status.charAt(0).toUpperCase() + order.status.slice(1)}

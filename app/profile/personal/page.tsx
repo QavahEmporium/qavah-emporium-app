@@ -41,7 +41,7 @@ export default async function PersonalInfoPage() {
           </div>
           <Link
             href="/profile/edit"
-            className="mt-6 block w-full bg-pink-500 text-white py-2 px-4 rounded-full hover:bg-pink-700 transition text-center font-medium"
+            className="mt-6 block w-full bg-gull-gray-500 text-white py-2 px-4 hover:bg-gull-gray-700 transition text-center font-medium"
           >
             Edit Profile
           </Link>{" "}

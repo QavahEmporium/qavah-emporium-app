@@ -18,6 +18,7 @@ import CartSidebarButton from "@/components/cart/cart-sidebar-button";
 import MobileMenu from "./mobile-menu";
 import DesktopNav from "./desktop-nav";
 import { IUser } from "@/definitions/user";
+import Image from "next/image";
 
 export default function Header({ user }: { user: IUser | null }) {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,15 +43,38 @@ export default function Header({ user }: { user: IUser | null }) {
       ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-20 flex items-center justify-between mb-0 px-4 py-4 bg-lunar-green-100 shadow-md md:px-8 lg:px-36 xl:px-52">
+    <header className="fixed top-0 left-0 right-0 z-20 flex items-center justify-between mb-0 px-4 py-3 bg-white shadow-md md:px-8 lg:px-36 xl:px-52">
       {/* Mobile Hamburger */}
       <button className="md:hidden" onClick={() => setMobileMenuOpen(true)}>
         <Menu className="w-6 h-6" />
       </button>
 
-      {/* Logo */}
-      <Link href="/" className="text-xl font-bold tracking-wide md:text-2xl">
-        Qavah
+      {/* Desktop Logo */}
+      <Link
+        href="/"
+        className="relative hidden md:block w-40 h-12 overflow-hidden"
+      >
+        <Image
+          src="/logo-full.png"
+          alt="Logo"
+          fill
+          className="object-cover object-center scale-125 md:scale-380"
+          priority
+        />
+      </Link>
+
+      {/* Mobile Logo */}
+      <Link
+        href="/"
+        className="md:hidden relative block w-32 h-10 overflow-hidden"
+      >
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          fill
+          className="object-contain object-center scale-280"
+          priority
+        />
       </Link>
 
       {/* Desktop Nav */}

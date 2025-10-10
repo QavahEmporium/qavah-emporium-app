@@ -43,10 +43,10 @@ export default function ProductPagination({
       <Link
         href={currentPage > 1 ? createLink(currentPage - 1) : "#"}
         className={cn(
-          "px-4 py-2 rounded-full transition-colors",
+          "px-4 py-2 rounded-full transition-colors font-raleway",
           currentPage > 1
-            ? "bg-lunar-green-200 text-lunar-green-950 hover:bg-lunar-green-300 shadow-md"
-            : "bg-lunar-green-100 opacity-50 cursor-not-allowed pointer-events-none"
+            ? "bg-lunar-green-100 text-lunar-green-700 hover:bg-lunar-green-300 shadow-md font-semibold"
+            : "bg-lunar-green-50 opacity-50 cursor-not-allowed pointer-events-none"
         )}
       >
         Prev
@@ -62,7 +62,7 @@ export default function ProductPagination({
               className={cn(
                 "px-3 py-2 rounded-full text-sm font-medium transition-all",
                 p === currentPage
-                  ? "bg-pink-500 text-white shadow-pink-300 shadow-md"
+                  ? "bg-gull-gray-500 text-white shadow-gray-300 shadow-md"
                   : "bg-gray-50 shadow shadow-gray-200 shadow-sm hover:shadow-lg"
               )}
             >
@@ -80,10 +80,10 @@ export default function ProductPagination({
       <Link
         href={currentPage < totalPages ? createLink(currentPage + 1) : "#"}
         className={cn(
-          "px-4 py-2 rounded-full transition-colors",
+          "px-4 py-2 rounded-full transition-colors font-raleway",
           currentPage < totalPages
-            ? "bg-lunar-green-200 text-lunar-green-950 hover:bg-lunar-green-300 shadow-md"
-            : "bg-lunar-green-100 opacity-50 cursor-not-allowed pointer-events-none"
+            ? "bg-lunar-green-100 text-lunar-green-700 hover:bg-lunar-green-300 shadow-md font-semibold"
+            : "bg-lunar-green-50 opacity-50 cursor-not-allowed pointer-events-none"
         )}
       >
         Next

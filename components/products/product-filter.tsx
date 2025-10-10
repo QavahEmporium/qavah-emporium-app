@@ -86,7 +86,9 @@ export default function ProductFilters({
     <div className="flex flex-col gap-6 mb-8">
       {/* Search */}
       <div className="flex flex-col gap-1">
-        <label className="font-mono text-emperor-950">Search</label>
+        <label className="font-raleway font-medium text-lunar-green-800">
+          Search
+        </label>
         <div className="flex items-center gap-2 px-4 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all">
           <input
             type="text"
@@ -104,7 +106,7 @@ export default function ProductFilters({
         <div className="flex flex-col sm:flex-row gap-4">
           {/* Category */}
           <div className="flex flex-col gap-1 w-full sm:w-auto">
-            <label className="font-mono text-emperor-950">Category</label>
+            <label className="font-raleway font-medium text-emperor-950">Category</label>
             <div className="flex items-center px-4 rounded-xl bg-white shadow-sm hover:shadow-lg transition-all">
               <select
                 value={categoryInput}
@@ -124,7 +126,7 @@ export default function ProductFilters({
 
           {/* Availability */}
           <div className="flex flex-col gap-1 w-full sm:w-auto">
-            <label className="font-mono text-emperor-950">Availability</label>
+            <label className="font-raleway font-medium text-emperor-950">Availability</label>
             <div className="flex items-center px-4 rounded-xl bg-white shadow-sm hover:shadow-lg transition-all">
               <select
                 value={availability}
@@ -140,7 +142,7 @@ export default function ProductFilters({
 
           {/* Price Range */}
           <div className="flex flex-col gap-1 w-full sm:w-auto">
-            <label className="font-mono text-emperor-950">Max Price</label>
+            <label className="font-raleway font-medium text-emperor-950">Max Price</label>
             <div className="flex items-center gap-3 px-4 py-2 rounded-xl bg-white shadow-sm hover:shadow-lg transition-all">
               <input
                 type="range"

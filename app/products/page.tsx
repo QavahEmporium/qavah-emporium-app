@@ -1,4 +1,5 @@
 import ProductListingClient from "@/components/products/product-listing-client";
+import { getBabyProductList } from "@/data/baby-data";
 import { getProductList } from "@/data/products";
 
 export default async function ProductsPage({
@@ -11,7 +12,7 @@ export default async function ProductsPage({
   const page = Number(searchParamsObj.page) || 1;
   const limit = 12;
 
-  const data = await getProductList({ page, category, search, limit });
+  const data = await getBabyProductList({ page, category, search, limit });
 
   return (
     <main className="flex-1 px-4 sm:px-8 md:px-8 lg:px-36 xl:px-52 py-10">

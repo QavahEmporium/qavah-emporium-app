@@ -64,17 +64,17 @@ export default function ProductGrid({ products }: { products: Product[] }) {
         <motion.div
           key={product.id}
           variants={cardVariants}
-          className="flex flex-col bg-gradient-to-b from-white via-white to-gray-50 p-1 md:p-3 rounded-2xl shadow-lunar-green-300 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all border border-lunar-green-100"
+          className="flex flex-col gap-3 p-1 md:p-3 hover:-translate-y-1 transition-all"
         >
           {/* Product Image */}
           <Link
             href={`/products/${product.id}`}
-            className="relative overflow-hidden rounded-xl"
+            className="relative overflow-hidden"
           >
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="h-40 md:h-48 lg:h-56 flex items-center justify-center bg-gray-100"
+              className="h-40 md:h-48 lg:h-56 flex items-center justify-center bg-gull-gray-100"
             >
               <Image
                 src={product.thumbnail || product.image || "/placeholder.jpg"}
@@ -82,35 +82,41 @@ export default function ProductGrid({ products }: { products: Product[] }) {
                 width={200}
                 height={200}
                 sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 200px"
-                priority={index < 4} // preload first row of images              
+                priority={index < 4} // preload first row of images
                 className="object-contain h-full"
               />
             </motion.div>
           </Link>
 
+          <div className="w-full flex flex-row items-center justify-center gap-2">
+            <div className="rounded-full bg-negroni-200 border-2 border-gull-gray-200 w-3 h-3 md:w-4 md:h-4"></div>
+            <div className="rounded-full bg-peach-cream-300 border-2 border-gull-gray-200 w-3 h-3 md:w-4 md:h-4"></div>
+            <div className="rounded-full bg-gull-gray-200 border-2 border-gull-gray-200 w-3 h-3 md:w-4 md:h-4"></div>
+          </div>
+
           {/* Product Details */}
-          <div className="flex flex-col flex-1 px-2 md:px-1 mt-2">
-            <h3 className="text-lunar-green-950 font-semibold text-base md:text-lg line-clamp-2">
+          <div className="flex flex-col flex-1 px-2 md:px-1">
+            <h3 className="font-tenor-sans text-lunar-green-950 font-semibold text-base md:text-md line-clamp-2">
               {product.title}
             </h3>
 
-            <span className="mt-2 inline-block w-fit bg-lunar-green-100 text-lunar-green-700 text-xs font-semibold px-2 py-1 rounded-full">
+            <span className="mt-2 font-raleway inline-block w-fit bg-lunar-green-100 text-lunar-green-950 text-xs font-semibold px-2 py-1 rounded-full">
               {product.category}
             </span>
 
             <p className="my-2 text-lunar-green-950 font-bold text-sm md:text-base">
-              ${product.price}
+              R{product.price}
             </p>
-
-            <motion.button
-              whileTap={{ scale: 0.97 }}
-              whileHover={{ y: -2, boxShadow: "0px 8px 15px rgba(0,0,0,0.12)" }}
-              onClick={() => handleAddToCart(product)}
-              className="mt-auto w-full bg-pink-500 text-white py-2 rounded-full text-sm md:text-base font-semibold transition-all"
-            >
-              Add to Cart
-            </motion.button>
           </div>
+
+          <motion.button
+            whileTap={{ scale: 0.97 }}
+            whileHover={{ y: -2, boxShadow: "0px 8px 15px rgba(0,0,0,0.12)" }}
+            onClick={() => handleAddToCart(product)}
+            className="font-raleway mt-auto w-full bg-gull-gray-500 text-white py-2 text-sm md:text-base font-semibold transition-all"
+          >
+            Add to Cart
+          </motion.button>
         </motion.div>
       ))}
     </motion.div>

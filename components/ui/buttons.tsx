@@ -18,7 +18,7 @@ export function SubmitButton({ name, isPending, ...props }: SubmitButtonProps) {
       type="submit"
       disabled={isPending}
       {...props}
-      className={`w-full bg-pink-500 text-white py-2 rounded-full font-semibold hover:bg-pink-600 transition disabled:opacity-50`}
+      className={`w-full bg-gull-gray-500 text-white py-2 font-semibold hover:bg-gull-gray-600 transition disabled:opacity-50`}
     >
       {isPending ? "Processing..." : name}
     </button>

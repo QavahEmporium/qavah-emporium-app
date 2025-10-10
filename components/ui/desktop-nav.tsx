@@ -39,7 +39,7 @@ export default function DesktopNav({
             {isActive && (
               <motion.div
                 layoutId="pill"
-                className="absolute inset-0 bg-lunar-green-200 shadow-lunar-green-300 shadow-md rounded-full z-0"
+                className="absolute inset-0 bg-gull-gray-500 shadow-gray-300 shadow-md z-0"
                 transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
               />
             )}
@@ -47,14 +47,14 @@ export default function DesktopNav({
             {/* Text + Icon */}
             <Link
               href={link.href}
-              className={`relative z-10 font-semibold flex items-center gap-2 px-4 py-2 rounded-full 
+              className={`relative z-10 font-raleway flex items-center gap-2 px-4 py-2 rounded-full 
                 ${
                   isActive
-                    ? "text-lunar-green-900"
-                    : "text-lunar-green-700 hover:text-lunar-green-900"
+                    ? "text-white font font-bold"
+                    : "text-lunar-green-600 font-semibold hover:text-lunar-green-900"
                 }`}
             >
-              <link.icon className="w-5 h-5" />
+              <link.icon className="w-5 h-5" strokeWidth={isActive ? 3 : 2} />
               {link.label}
             </Link>
           </div>

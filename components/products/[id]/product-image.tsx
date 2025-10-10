@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function ProductImage({ src, title }: { src: string; title: string }) {
   return (
     <motion.div
-      className="flex justify-center items-center bg-gray-50 rounded-2xl p-8 shadow-lunar-green-300 shadow-md"
+      className="flex justify-center items-center bg-gull-gray-100 p-8"
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4 }}

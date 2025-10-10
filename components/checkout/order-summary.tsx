@@ -32,7 +32,7 @@ export default function OrderSummary({
             <div>
               <p className="font-medium">{item.name}</p>
               <p className="text-sm text-gray-500">
-                {item.quantity} × R{item.price.toFixed(2)}
+                {item.quantity} × R{Number(item.price).toFixed(2)}
               </p>
             </div>
             <p className="font-semibold">

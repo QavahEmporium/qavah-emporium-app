@@ -117,7 +117,7 @@ export default function WishlistClient({
                   boxShadow: "0px 8px 15px rgba(0,0,0,0.2)",
                 }}
                 onClick={() => handleAddToCart(item)}
-                className="mt-auto w-full bg-pink-500 text-white py-2 rounded-full text-sm md:text-base font-semibold transition-all"
+                className="mt-auto w-full bg-gull-gray-500 text-white py-2 rounded-full text-sm md:text-base font-semibold transition-all"
               >
                 Add to Cart
               </motion.button>

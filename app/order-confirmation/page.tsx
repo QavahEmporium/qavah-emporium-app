@@ -14,8 +14,8 @@ export default function OrderConfirmationPage() {
   }, [clearCart]);
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center md:px-4 pt-[64px] pb-[72px] bg-lunar-green-50">
-      <div className="md:bg-white md:rounded-2xl shadow-lunar-green-300 md:shadow-lg hover:shadow-xl transition-all p-6 md:p-10 text-center max-w-lg w-full">
+    <main className="min-h-screen flex flex-col items-center justify-center md:px-4 pt-[64px] pb-[72px] bg-white">
+      <div className="md:bg-white md:rounded-2xl shadow-lunar-green-300 md:shadow-lg hover:shadow-xl transition-all p-6 md:p-10 text-center max-w-lg w-full border border-gull-gray-100">
         <CheckCircle className="w-16 h-16 text-pink-400 mx-auto mb-4" />
         <h1 className="text-lunar-green-900 text-3xl font-bold text-gray-900 mb-2">
           Thank You for Your Order!
@@ -28,7 +28,7 @@ export default function OrderConfirmationPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/profile/orders?redirect=/"
-            className="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-3 rounded-xl transition-all"
+            className="w-full sm:w-auto bg-gull-gray-500 hover:bg-gull-gray-600 text-white font-semibold px-6 py-3 rounded-xl transition-all"
           >
             View Orders
           </Link>

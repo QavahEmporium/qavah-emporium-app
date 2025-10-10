@@ -8,7 +8,7 @@ export const Avatar = ({ user }: { user: IUser }) => {
     <div className="p-6 flex flex-col items-center border-b">
       <div className="relative w-30 h-30 rounded-full bg-gray-200 flex items-center justify-center mb-4">
         <User className="w-20 h-15 text-gray-500" />
-        <button className="absolute bottom-0 right-0 bg-pink-500 text-white text-xs px-2 py-1 rounded-md shadow hover:bg-pink-800">
+        <button className="absolute bottom-0 right-0 bg-gull-gray-500 text-white text-xs px-2 py-1 rounded-md shadow hover:bg-gull-gray-800">
           Change
         </button>
       </div>
@@ -16,7 +16,7 @@ export const Avatar = ({ user }: { user: IUser }) => {
       <p className="text-gray-600">{user.email}</p>
       <Link
         href="/profile/edit"
-        className="mt-3 text-sm text-pink-600 hover:underline"
+        className="mt-3 text-sm text-lunar-green-600 hover:underline"
       >
         Edit Profile
       </Link>

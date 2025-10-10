@@ -22,12 +22,12 @@ export default function HeroSection({
   return (
     <section className="relative text-center h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 scale-[1.3] md:scale-[1]">
         <Image
           src={image}
           alt="Hero background"
           fill
-          className="object-contain object-center"
+          className="object-contain md:object-cover object-center md:object-[center_35%]"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -39,7 +39,7 @@ export default function HeroSection({
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl font-bold mb-4 md:text-5xl lg:text-6xl text-white drop-shadow-lg"
+          className="text-3xl font-tenor-sans font-bold mb-4 md:text-5xl lg:text-6xl text-white drop-shadow-lg"
         >
           {title}
         </motion.h1>
@@ -48,7 +48,7 @@ export default function HeroSection({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="mb-6 text-sm text-gray-200 md:text-lg lg:text-xl max-w-2xl mx-auto"
+          className="mb-6 font-raleway text-sm text-gray-200 md:text-lg lg:text-xl max-w-2xl mx-auto"
         >
           {subtitle}
         </motion.p>
@@ -60,7 +60,7 @@ export default function HeroSection({
         >
           <Link
             href={ctaLink}
-            className="bg-white text-black px-6 py-3 rounded-full font-semibold md:px-8 md:py-4 hover:bg-gray-200 transition"
+            className="bg-white font-tenor-sans text-black px-6 py-3 rounded-full font-semibold md:px-8 md:py-4 hover:bg-gray-200 transition"
           >
             {ctaText}
           </Link>

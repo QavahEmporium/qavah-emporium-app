@@ -29,7 +29,7 @@ export default function HelpCenterPage() {
         <section className="w-full max-w-2xl md:bg-white md:rounded-xl md:shadow-md p-6">
           {/* Header */}
           <div className="flex flex-row gap-3 items-center mb-8">
-            <BackButton url="/support" />
+            <BackButton />
             <h1 className="text-2xl font-bold text-lunar-green-900">Help Center / FAQs</h1>
           </div>
 

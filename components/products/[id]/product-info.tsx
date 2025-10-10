@@ -26,7 +26,7 @@ const childVariants = {
 export function ProductInfo({ product }: { product: any }) {
   return (
     <motion.div
-      className="flex flex-col md:justify-between gap-8"
+      className="flex flex-col md:justify-between gap-8 px-4"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -35,7 +35,7 @@ export function ProductInfo({ product }: { product: any }) {
         {/* Title */}
         <motion.h1
           variants={childVariants}
-          className="text-3xl md:text-4xl font-bold text-lunar-green-800"
+          className="text-3xl md:text-4xl font-bold text-lunar-green-900 font-tenor-sans"
         >
           {product.title}
         </motion.h1>
@@ -46,10 +46,10 @@ export function ProductInfo({ product }: { product: any }) {
           className="flex items-center gap-4"
         >
           <span className="text-2xl font-semibold text-lunar-green-900">
-            ${product.price}
+            R{product.price}
           </span>
           {product.stock > 0 ? (
-            <span className="px-3 py-2 text-xs font-semibold text-lunar-green-700 bg-lunar-green-100 rounded-full">
+            <span className="px-3 py-2 text-xs font-semibold text-lunar-green-800 bg-lunar-green-100 rounded-full font-raleway">
               In Stock
             </span>
           ) : (
@@ -62,7 +62,7 @@ export function ProductInfo({ product }: { product: any }) {
         {/* Description */}
         <motion.p
           variants={childVariants}
-          className="text-gray-700 leading-relaxed"
+          className="text-gray-700 leading-relaxed font-raleway"
         >
           {product.description}
         </motion.p>
@@ -75,7 +75,7 @@ export function ProductInfo({ product }: { product: any }) {
 
         {/* Selling Points */}
         <motion.ul
-          className="space-y-2 text-sm text-gray-600"
+          className="space-y-2 text-sm text-gray-600 font-raleway"
           variants={childVariants}
         >
           {[

@@ -26,7 +26,7 @@ export default function ShippingAddressList({
             exit={{ opacity: 0, scale: 0.9, y: -20 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             onClick={() => setSelected(addr.id)}
-            className={`border rounded-lg p-4 shadow-sm hover:shadow-lg flex justify-between items-start cursor-pointer ${
+            className={`border rounded-lg p-4 shadow-sm hover:shadow-lg flex justify-between items-start cursor-pointer bg-white ${
               selected === addr.id
                 ? "border-lunar-green-500 bg-lunar-green-50"
                 : "border-gray-200"

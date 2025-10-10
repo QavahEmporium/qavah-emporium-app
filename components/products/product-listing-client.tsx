@@ -7,9 +7,9 @@ import ProductPagination from "./product-pagination";
 import ProductGridSkeleton from "./product-listing-skeleton";
 
 type Product = {
-  id: string;
+  id: number;
   title: string;
-  price: number;
+  price: number | string;
   thumbnail: string;
   category: string;
   stock: number;
@@ -46,12 +46,14 @@ export default function ProductListingClient({
       (filters.availability === "All" ||
         (filters.availability === "Available" && p.stock > 0) ||
         (filters.availability === "Unavailable" && p.stock === 0)) &&
-      p.price <= filters.maxPrice
+      Number(p.price) <= filters.maxPrice
   );
 
   return (
     <div className="min-h-screen">
-      <h1 className="text-2xl font-bold mb-6">Products</h1>
+      <h1 className="text-2xl font-bold mb-6 font-tenor-sans text-lunar-green-800">
+        Products
+      </h1>
 
       <ProductFilters
         search={filters.search}

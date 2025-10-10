@@ -85,7 +85,7 @@ export default function SecurityClient({ user }: { user: IUser }) {
           onClick={() => setTwoFAEnabled(!twoFAEnabled)}
           className={`px-4 py-2 rounded-lg text-white transition ${
             twoFAEnabled
-              ? "bg-pink-600 hover:bg-pink-500"
+              ? "bg-gull-gray-600 hover:bg-gull-gray-500"
               : "bg-lunar-green-600 hover:bg-lunar-green-500"
           }`}
         >
