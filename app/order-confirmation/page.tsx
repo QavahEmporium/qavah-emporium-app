@@ -15,7 +15,7 @@ export default function OrderConfirmationPage() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center md:px-4 pt-[64px] pb-[72px] bg-white">
-      <div className="md:bg-white md:rounded-2xl shadow-lunar-green-300 md:shadow-lg hover:shadow-xl transition-all p-6 md:p-10 text-center max-w-lg w-full border border-gull-gray-100">
+      <div className="md:bg-white md:rounded-2xl shadow-lunar-green-300 md:shadow-lg hover:shadow-xl transition-all p-6 md:p-10 text-center max-w-lg w-full md:border md:border-gull-gray-100">
         <CheckCircle className="w-16 h-16 text-pink-400 mx-auto mb-4" />
         <h1 className="text-lunar-green-900 text-3xl font-bold text-gray-900 mb-2">
           Thank You for Your Order!
