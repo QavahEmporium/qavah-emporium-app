@@ -44,7 +44,7 @@ export default function OrdersClient({ orders }: { orders: Order[] }) {
         return (
           <motion.div
             key={order.id}
-            className="border border-lunar-green-50 md:border-lunar-green-100 rounded-2xl shadow-lunar-green-300 shadow-sm hover:shadow-lg bg-white px-4 py-2 cursor-pointer transition-all"
+            className="border border-lunar-green-50 rounded-2xl shadow-lunar-green-100 shadow-sm hover:shadow-lg bg-white px-4 py-2 cursor-pointer transition-all"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
