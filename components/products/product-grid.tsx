@@ -73,9 +73,9 @@ export default function ProductGrid({ products }: { products: any[] }) {
           </Link>
 
           <div className="w-full flex flex-row items-center justify-center gap-1 md:gap-2">
-            <div className="rounded-full bg-negroni-200 border-1 border-gull-gray-100 w-3 h-3 md:w-4 md:h-4"></div>
-            <div className="rounded-full bg-peach-cream-300 border-1 border-gull-gray-100 w-3 h-3 md:w-4 md:h-4"></div>
-            <div className="rounded-full bg-gull-gray-200 border-1 border-gull-gray-100 w-3 h-3 md:w-4 md:h-4"></div>
+            <div className="rounded-full bg-negroni-200 border-1 border-gull-gray-100 w-4 h-4"></div>
+            <div className="rounded-full bg-peach-cream-300 border-1 border-gull-gray-100 w-4 h-4"></div>
+            <div className="rounded-full bg-gull-gray-200 border-1 border-gull-gray-100 w-4 h-4"></div>
           </div>
 
           {/* Product Details */}
