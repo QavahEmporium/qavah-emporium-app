@@ -65,7 +65,12 @@ export function ProductInfo({ product }: { product: any }) {
           className="text-gray-700 leading-relaxed font-raleway"
         >
           {product.description}
-        </motion.p>
+        </motion.p>{" "}
+        <div className="w-full flex flex-row items-center justify-start gap-1 md:gap-2">
+          <div className="rounded-full bg-negroni-200 border-1 border-gull-gray-100 w-5 h-5 md:w-6 md:h-6"></div>
+          <div className="rounded-full bg-peach-cream-300 border-1 border-gull-gray-100 w-5 h-5 md:w-6 md:h-6"></div>
+          <div className="rounded-full bg-gull-gray-200 border-1 border-gull-gray-100 w-5 h-5 md:w-6 md:h-6"></div>
+        </div>
       </div>
 
       <div className="flex flex-col gap-4 md:gap-8">
