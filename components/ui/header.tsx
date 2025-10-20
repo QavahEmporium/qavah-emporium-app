@@ -55,10 +55,10 @@ export default function Header({ user }: { user: IUser | null }) {
         className="relative hidden md:block w-40 h-12 overflow-hidden"
       >
         <Image
-          src="/logo-full.png"
+          src="/logo-pink.jpg"
           alt="Logo"
           fill
-          className="object-cover object-center scale-125 md:scale-380"
+          className="object-cover object-[center_56%] scale-125 md:scale-90"
           priority
         />
       </Link>
