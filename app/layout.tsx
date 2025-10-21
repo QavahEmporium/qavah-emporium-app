@@ -31,8 +31,42 @@ const tenorSans = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Qavah Emporium",
-  description: "Qavah Emporium Clothings",
+  title: "Qavah Emporium | Baby Clothing & Essentials",
+  description:
+    "Shop adorable, high-quality baby clothing and accessories at Qavah Emporium. Comfort meets style for your little one.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_ZA",
+    url: "https://qavah-emporium-app.vercel.app",
+    siteName: "Qavah Emporium",
+    title: "Qavah Emporium | Baby Clothing & Essentials",
+    description:
+      "Discover premium baby wear collections – cozy, cute, and crafted with love.",
+    images: [
+      {
+        url: "/logo-pink.jpg", // ✅ Full-width hero or featured image
+        width: 1200,
+        height: 630,
+        alt: "Qavah Emporium – Baby Clothing & Essentials",
+      },
+      {
+        url: "/logo.png", // ✅ Small logo for additional preview context
+        width: 200,
+        height: 200,
+        alt: "Qavah Emporium Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Qavah Emporium | Baby Clothing & Essentials",
+    description:
+      "Explore adorable baby wear and premium essentials at Qavah Emporium.",
+    images: ["/logo-pink.jpg"],
+  },
 };
 
 export default async function RootLayout({
