@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Discover premium baby wear collections – cozy, cute, and crafted with love.",
     images: [
       {
-        url: "/logo-pink.jpg", // ✅ Full-width hero or featured image
+        url: "/hero-4.jpeg", // ✅ Full-width hero or featured image
         width: 1200,
         height: 630,
         alt: "Qavah Emporium – Baby Clothing & Essentials",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Qavah Emporium | Baby Clothing & Essentials",
     description:
       "Explore adorable baby wear and premium essentials at Qavah Emporium.",
-    images: ["/logo-pink.jpg"],
+    images: ["/hero-4.jpeg"],
   },
 };
 
