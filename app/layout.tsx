@@ -81,7 +81,7 @@ export default async function RootLayout({
         {/* ✅ Global Header */}
         <Header user={user} />
         {/* ✅ Main content */}
-        <div className="pt-16 bg-white">{children}</div>
+        <div className="pt-16 bg-white dark:bg-white">{children}</div>
         {/* {children} */}
         {/* ✅ Global Cart Sidebar */}
         <CartSidebar />
